@@ -12,14 +12,10 @@ export const QUERIES = {
 
 export const COLORS = {
   primary: {
-    green: "hsl(192, 37%, 48%)",
-    violet: "hsl(268, 34%, 53%)",
-    black: "hsl(240 , 21%, 20%)",
-    gray: "hsl(240 , 10%, 57%)"
+    black: "hsl(244, 23%, 12%)",
+    white: "hsl(20, 33%, 98%)",
+    yellow: "hsl(33, 100%, 70%)",
+    orange: "hsl(12, 94%, 65%)",
+    turkus: "hsl(177, 68%, 64%)",
   },
-  neutral: {
-    lightGreen: "hsla(192, 90%, 77%)",
-    lightViolet: "hsla(268, 100%, 86%)",
-    white: "hsl(0, 0%, 98%)",
-  }
 };

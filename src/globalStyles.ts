@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
 html, body, #root {
   height: 100%;
   font-size: 16px;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
