@@ -1,12 +1,26 @@
 import styled from 'styled-components';
-import { COLORS } from '../constant';
+import { COLORS, QUERIES } from '../constant';
 
 const FooterWrapper = styled.footer`
   padding: 64px 24px 80px 24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "title ."
+      "dsc socials"
+    ;
+  }  
 `;
 
 const Logo = styled.div`
   margin-bottom: 32px;
+
+  @media ${QUERIES.tabletAndUp} {
+    grid-area: title;
+  } 
 `;
 
 const Description = styled.p`
@@ -14,16 +28,27 @@ const Description = styled.p`
   font-size: 1rem;
   color: ${COLORS.primary.black};
   margin-bottom: 64px;
+  max-width: 380px;
 
   span {
     font-weight: 700;
     margin-left: 8px;
   }
+
+  @media ${QUERIES.tabletAndUp} {
+    grid-area: dsc;
+    margin-bottom: 0;
+  } 
 `;
 
 const SocialIcons = styled.div`
   display: flex;
   gap: 20px;
+
+  @media ${QUERIES.tabletAndUp} {
+    grid-area: socials;
+    align-self: center;
+  } 
 `
 
 function Footer():JSX.Element {

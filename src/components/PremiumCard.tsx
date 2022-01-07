@@ -1,11 +1,25 @@
 import styled from 'styled-components';
-import { COLORS } from '../constant';
+import { COLORS, QUERIES } from '../constant';
 
 const CardWrapper = styled.section`
   background-color: ${COLORS.primary.orange};
   padding: 48px 36px;
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-top: -24px;
+
+  @media ${QUERIES.tabletAndUp} {
+    position: absolute;
+    top: 220px;
+    left: 240px;
+  }
+
+  @media ${QUERIES.tabletAndUp} {
+    top: 90px;
+    left: 569px;
+  }
 `
 
 const Title = styled.h2`
@@ -14,6 +28,10 @@ const Title = styled.h2`
   font-size: 2rem;
   line-height: 40px;
   margin-bottom: 12px;
+
+  @media ${QUERIES.laptopAndUp} {
+    font-size: 2.5rem;
+  }
 `;
 
 const Description = styled.p`
