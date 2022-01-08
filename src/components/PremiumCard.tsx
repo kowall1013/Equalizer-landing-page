@@ -93,6 +93,8 @@ const Button = styled.button`
   border: 1px solid transparent;
   border-radius: 12px;
   gap: 8px;
+  cursor: pointer;
+  transition: background-color .3s;
 
   img {
     height: 18px;
@@ -103,10 +105,18 @@ const IosButton = styled(Button)`
   background-color: ${COLORS.primary.black};
   color: ${COLORS.primary.white};
   margin-bottom: 16px;
+ 
+  &:hover {
+    background-color: ${COLORS.primary.turkus};
+  }
 `
 const AndroidButton = styled(Button)`
   background-color: ${COLORS.primary.white};
   color: ${COLORS.primary.black};
+
+  &:hover {
+    background-color: ${COLORS.primary.yellow};
+  }
 `
 
 function PremiumCard():JSX.Element {

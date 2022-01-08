@@ -54,6 +54,15 @@ const SocialIcons = styled.div`
   display: flex;
   gap: 20px;
 
+  img {
+    cursor: pointer;
+    transition: filter .1s;
+
+    &:hover {
+      filter: invert(50%) sepia(27%) saturate(6888%) hue-rotate(336deg) brightness(130%) contrast(96%);
+    }
+  }
+
   @media ${QUERIES.tabletAndUp} {
     grid-area: socials;
     align-self: center;
@@ -71,10 +80,16 @@ function Footer():JSX.Element {
         Have any problems? Contact us via social media or email us at  
         <span>equalizer@example.com</span>
       </Description>
-      <SocialIcons>
-        <img src="./assets/icon-facebook.svg" alt="facebook icon" />
-        <img src="./assets/icon-instagram.svg" alt="instagram icon" />
-        <img src="./assets/icon-twitter.svg" alt="twitter icon" />
+      <SocialIcons> 
+        <a href='www.facebook.com'>
+          <img  src="./assets/icon-facebook.svg" alt="facebook icon" />
+        </a>
+        <a href='www.instagram.com'>
+          <img src="./assets/icon-instagram.svg" alt="instagram icon" />
+        </a>
+        <a href='www.twitter.com'>
+          <img src="./assets/icon-twitter.svg" alt="twitter icon" />
+        </a>
       </SocialIcons>
     </FooterWrapper>
   )
