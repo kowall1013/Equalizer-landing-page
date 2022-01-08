@@ -12,7 +12,16 @@ const FooterWrapper = styled.footer`
       "title ."
       "dsc socials"
     ;
-  }  
+  }
+  
+  @media ${QUERIES.laptopAndUp}{
+    padding: 0 165px 90px 165px;
+    grid-template-columns: 2fr 4fr 100px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "title dsc socials"
+    ;
+  }
 `;
 
 const Logo = styled.div`

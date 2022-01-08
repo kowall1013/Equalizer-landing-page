@@ -20,6 +20,10 @@ const CardWrapper = styled.section`
     top: 90px;
     left: 569px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding-top: 56px;
+  }
 `
 
 const Title = styled.h2`
@@ -31,6 +35,8 @@ const Title = styled.h2`
 
   @media ${QUERIES.laptopAndUp} {
     font-size: 2.5rem;
+    line-height: 52px;
+    margin-bottom: 22px;
   }
 `;
 
@@ -39,6 +45,12 @@ const Description = styled.p`
   color: ${COLORS.primary.white};
   line-height: 28px;
   margin-bottom: 36px;
+
+  @media ${QUERIES.laptopAndUp} {
+    font-size: 1.25rem;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
 `;
 
 const PriceWrapper = styled.div`
@@ -63,6 +75,10 @@ const PriceWrapper = styled.div`
       display: inline-block;
       margin-right: 4px;
     }
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-bottom: 46px;
   }
 `;
 

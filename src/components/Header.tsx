@@ -83,7 +83,8 @@ const Description = styled.p`
 
   @media ${QUERIES.laptopAndUp} {
     font-size: 1.25rem;
-    max-width: 1000px;
+    line-height: 34px;
+    max-width: 800px;
   }; 
 `;
 
